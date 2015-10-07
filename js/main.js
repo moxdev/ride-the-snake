@@ -148,6 +148,7 @@ function startGame() {
 
     // jquery keyboard function
     $(document).keydown(function(e) {
+        e.preventDefault();
         var key = e.which;
         if (key == "37" && d != "right") d = "left";
         else if (key == "38" && d != "down") d = "up";
